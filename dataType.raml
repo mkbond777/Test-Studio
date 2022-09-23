@@ -55,6 +55,9 @@ types:
       description: Get all test case in a given company, module and submodule
       responses:
         200:
+          headers:
+            Content-Type:
+              
           body:
             application/json:
               type: TestCase []
@@ -65,7 +68,7 @@ types:
             application/json:
               type: Error
               example:
-                 {"message":"Test ca not found"}
+                 {"message":"Test cases not found"}
               
 
 
