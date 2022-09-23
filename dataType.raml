@@ -36,18 +36,20 @@ types:
         required: false
       projectId: uuid
   companyId: uuid
+  moduleId: uuid
+  submoduleId: uuid
   TestCaseMeta:
     properties:
       testCaseId: 
         type: uuid
         required: false
       companyId: companyId
-      moduleId: uuid
-      submoduleId: uuid
+      moduleId: moduleId
+      submoduleId: submoduleId
 
 
 /testcase:
-  /{projectId}/
+  /{companyIdbkj}:
   get:
     description: 
 
