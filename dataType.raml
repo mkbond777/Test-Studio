@@ -58,13 +58,13 @@ types:
   /{companyId}/{moduleId}/{submoduleId}:
     get:
       description: Get all test case in a given company, module and submodule
-      responses:
-        200:
-          headers:
+      headers:
             Key:
               type: x-user-date
             Cookie:
               type: string
+      responses:
+        200:
           body:
             application/json:
               type: TestCase []
@@ -82,7 +82,8 @@ types:
       application/json:
         type : TestCaseBO
         example: {"testCase":{"testCaseName":"","testCaseDescriptipn":"","testSteps":["Do this","Do that"],"expectedResult":"","actualResult":"","testType":"","priority":"","automation":true,"comments":""},"testCaseMeta":{"companyId":"eae0cef8-caed-11e9-a32f-2a2ae2dbcce4","moduleId":"eae0cef8-caed-11e9-a32f-2a2ae2dbcce4","submoduleId":"eae0cef8-caed-11e9-a32f-2a2ae2dbcce4"}}
-        
+    responses:
+      
           
 
               
