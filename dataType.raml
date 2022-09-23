@@ -49,7 +49,7 @@ types:
       message : string
   x-user-date:
     properties:
-      userId: uui
+      userId: uuid
 
 
 /testcase:
@@ -60,7 +60,9 @@ types:
         200:
           headers:
             Key:
-              type: 
+              type: x-user-date
+            Cookie:
+              type: string
           body:
             application/json:
               type: TestCase []
