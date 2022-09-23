@@ -55,6 +55,9 @@ types:
 
 
 /testcase:
+  /{testCaseId}:
+    get:
+      
   /{companyId}/{moduleId}/{submoduleId}:
     get:
       description: Get all test case in a given company, module and submodule
@@ -88,6 +91,9 @@ types:
           application/json:
             type: TestCase
             example:
+  delete:
+  put:
+    
               
       
           
