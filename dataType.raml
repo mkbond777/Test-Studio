@@ -13,7 +13,9 @@ types:
     type: string
   TestCase:
     properties:
-      id: uuid
+      id: 
+        type: uuid
+        required: false
       testCaseName: string
       testCaseDescriptipn: string
       testSteps: [TestStep]
@@ -23,5 +25,8 @@ types:
       priority: string
       automation: boolean
       comments: string
-      c
+      createdDate: 
+        type: datetime
+        required: false
+      modifiedDate: 
 
