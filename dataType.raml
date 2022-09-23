@@ -34,7 +34,6 @@ types:
       isActive:
         type: boolean
         required: false
-      projectId: uuid
   
   TestCaseMeta:
     properties:
@@ -54,6 +53,9 @@ types:
       200:
         body:
           application/json:
-            
+            type: TestCase []
+            example:
+              [{"ticketName":"","ticketDescription":"","testSteps":["Do this","Do that"],"expectedResult":"","actualResult":"","testType":"","priority":"","automation":true,"comments":""}]
+              
 
 
