@@ -3,3 +3,8 @@ info:
   title: Test Studio
   version: '1.0.0'
 channels: {}
+
+components:
+  types:
+  uuid:
+    type: string
