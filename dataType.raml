@@ -9,7 +9,7 @@ types:
   uuid:
     type: string
     pattern: ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
-  TestStep:
+  testStep:
     type: string
   TestCase:
     properties:
@@ -18,7 +18,7 @@ types:
         required: false
       testCaseName: string
       testCaseDescriptipn: string
-      testSteps: [TestStep]
+      testSteps: [testStep]
       expectedResult: string
       actualResult: string
       testType: string
@@ -35,12 +35,13 @@ types:
         type: boolean
         required: false
       projectId: uuid
+  companyId: uuid
   TestCaseMeta:
     properties:
       testCaseId: 
         type: uuid
         required: false
-      companyId: uuid
+      companyId: companyId
       moduleId: uuid
       submoduleId: uuid
 
