@@ -48,7 +48,10 @@ types:
   x-user-date:
     properties:
       userId: uuid
-  
+  TestCaseBO:
+    properties:
+      testCase : TestCase
+      testCaseMeta : TestCaseMeta
 
 
 /testcase:
@@ -77,7 +80,7 @@ types:
     description: Create a test case and map it to given company, module and sub-module
     body:
       application/json:
-        type : TestCase
+        type : TestCaseBO
 
               
 
