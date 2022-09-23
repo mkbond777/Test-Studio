@@ -47,15 +47,15 @@ types:
 
 /testcase:
   /{companyId}/{moduleId}/{submoduleId}:
-  get:
-    description: Get all test case in a given company, module and submodule
-    responses:
-      200:
-        body:
-          application/json:
-            type: TestCase []
-            example:
-              [{"testCaseName":"","testCaseDescriptipn":"","testSteps":["Do this","Do that"],"expectedResult":"","actualResult":"","testType":"","priority":"","automation":true,"comments":""}]
+    get:
+      description: Get all test case in a given company, module and submodule
+      responses:
+        200:
+          body:
+            application/json:
+              type: TestCase []
+              example:
+                [{"testCaseName":"","testCaseDescriptipn":"","testSteps":["Do this","Do that"],"expectedResult":"","actualResult":"","testType":"","priority":"","automation":true,"comments":""}]
               
 
 
