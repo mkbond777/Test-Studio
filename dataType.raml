@@ -18,7 +18,7 @@ types:
         required: false
       testCaseName: string
       testCaseDescriptipn: string
-      testSteps: [testStep]
+      testSteps: testStep []
       expectedResult: string
       actualResult: string
       testType: string
@@ -55,7 +55,7 @@ types:
           application/json:
             type: TestCase []
             example:
-              [{"ticketName":"","ticketDescription":"","testSteps":["Do this","Do that"],"expectedResult":"","actualResult":"","testType":"","priority":"","automation":true,"comments":""}]
+              [{"testCaseName":"","testCaseDescriptipn":"","testSteps":["Do this","Do that"],"expectedResult":"","actualResult":"","testType":"","priority":"","automation":true,"comments":""}]
               
 
 
