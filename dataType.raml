@@ -45,9 +45,6 @@ types:
   Error:
     properties:
       message : string
-  x-user-date:
-    properties:
-      userId: uuid
   TestCaseBO:
     properties:
       testCase : TestCase
@@ -62,7 +59,7 @@ types:
     get:
       description: Get all test case in a given company, module and submodule
       headers:
-            key: x-user-date
+            x-user-date: string
             Cookie:
               type: string
       responses:
