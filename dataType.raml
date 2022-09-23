@@ -44,6 +44,10 @@ types:
       moduleId: uuid
       submoduleId: uuid
 
+  Error:
+    properties:
+      message : string
+
 
 /testcase:
   /{companyId}/{moduleId}/{submoduleId}:
@@ -61,7 +65,7 @@ types:
             application/json:
               type: Error
               example:
-                 {"message":"Unit not found"}
+                 {"message":"Test ca not found"}
               
 
 
