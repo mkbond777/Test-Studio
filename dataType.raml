@@ -35,22 +35,25 @@ types:
         type: boolean
         required: false
       projectId: uuid
-  companyId: uuid
-  moduleId: uuid
-  submoduleId: uuid
+  
   TestCaseMeta:
     properties:
       testCaseId: 
         type: uuid
         required: false
-      companyId: companyId
-      moduleId: moduleId
-      submoduleId: submoduleId
+      companyId: uuid
+      moduleId: uuid
+      submoduleId: uuid
 
 
 /testcase:
-  /{companyIdbkj}:
+  /{companyId}/{moduleId}/{submoduleId}:
   get:
-    description: 
+    description: Get all test case in a given company, module and submodule
+    responses:
+      200:
+        body:
+          application/json:
+            
 
 
