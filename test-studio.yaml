@@ -1,6 +1,6 @@
 asyncapi: '2.0.0'
 info:
-  title: Test Studio
+  title: Test Studio Kartikey testing
   version: '1.0.0'
 channels: {}
 
