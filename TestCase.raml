@@ -70,6 +70,12 @@ types:
             type: TestCase
             example:
               {"testCaseId":"eae0cef8-caed-11e9-a32f-2a2ae2dbcce4","testCaseName":"","testCaseDescriptipn":"","testSteps":["Do this","Do that"],"expectedResult":"","actualResult":"","testType":"","priority":"","automation":true,"comments":"","created_date":"","modified_date":""}
+      501:
+          body:
+            application/json:
+              type: Error
+              example:
+                 {"message":"Internal Server Error"}
   put:
     description: Edit a test case
     body:
@@ -79,9 +85,17 @@ types:
           {"testCaseId":"eae0cef8-caed-11e9-a32f-2a2ae2dbcce4","testCaseName":"","testCaseDescriptipn":"","testSteps":["Do this","Do that"],"expectedResult":"","actualResult":"","testType":"","priority":"","automation":true,"comments":""}
     responses:
       200:
-        b
-
-          
+        body:
+          application/json:
+            type: TestCase
+            example:
+              {"testCaseId":"eae0cef8-caed-11e9-a32f-2a2ae2dbcce4","testCaseName":"","testCaseDescriptipn":"","testSteps":["Do this","Do that"],"expectedResult":"","actualResult":"","testType":"","priority":"","automation":true,"comments":""}
+      501:
+          body:
+            application/json:
+              type: Error
+              example:
+                 {"message":"Internal Server Error"}
 
   /{testCaseId}:
     get:
