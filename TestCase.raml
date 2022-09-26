@@ -114,7 +114,13 @@ types:
             example:
   delete:
     description: Deletes a test case
+    headers:
+      x-user-date: string
+      Cookie:
+        type: string
     
+
+
   put:
     description: Edit a test case
     body:
