@@ -73,6 +73,7 @@ types:
     description: Edit a test case
     body:
       application/json:
+        
   /{testCaseId}:
     get:
       description: Get details of a particular test case
@@ -110,7 +111,6 @@ types:
               type: Error
               example:
                  {"message":"Internal Server Error"}
-
   /{companyId}/{moduleId}/{submoduleId}:
     get:
       description: Get all test case in a given company, module and submodule
