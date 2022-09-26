@@ -79,6 +79,14 @@ types:
               type: Error
               example:
                  {"message":"Internal Server Error"}
+    delete:
+      description: Deletes a test case
+      headers:
+        x-user-date: string
+        Cookie:
+          type: string
+      responses:
+      204:
 
   /{companyId}/{moduleId}/{submoduleId}:
     get:
@@ -112,15 +120,6 @@ types:
           application/json:
             type: TestCase
             example:
-  delete:
-    description: Deletes a test case
-    headers:
-      x-user-date: string
-      Cookie:
-        type: string
-    
-
-
   put:
     description: Edit a test case
     body:
