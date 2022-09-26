@@ -51,7 +51,9 @@ types:
       testCaseMeta : TestCaseMeta
   ListTestCaseBO:
     properties:
-      test
+      id: uuid
+      testCaseName: string
+      
 
 
 /testcase:
@@ -87,9 +89,9 @@ types:
         200:
           body:
             application/json:
-              type: TestCase []
+              type: ListTestCaseBO []
               example:
-                [{"testCaseName":"","testCaseDescriptipn":"","testSteps":["Do this","Do that"],"expectedResult":"","actualResult":"","testType":"","priority":"","automation":true,"comments":""}]
+                [{"testCaseName":""}]
         501:
           body:
             application/json:
