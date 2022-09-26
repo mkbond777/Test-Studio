@@ -86,7 +86,14 @@ types:
         Cookie:
           type: string
       responses:
-      204:
+        204:
+          body: nil
+        501:
+          body:
+            application/json:
+              type: Error
+              example:
+                 {"message":"Internal Server Error"}
 
   /{companyId}/{moduleId}/{submoduleId}:
     get:
