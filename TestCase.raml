@@ -61,7 +61,7 @@ types:
         x-user-date: string
         Cookie:
           type: string
-    description: Create a test case and map it to given company, module and sub-module
+    description: Create a test case and map it to given company, project, module and sub-module
     body:
       application/json:
         type : CreateTestCaseBO
@@ -141,7 +141,7 @@ types:
               type: Error
               example:
                  {"message":"Internal Server Error"}
-                 
+
   /{companyId}/{projectId}/{moduleId}/{submoduleId}:
     get:
       description: Get all test case in a given company, project, module and submodule
