@@ -63,6 +63,7 @@ types:
           type: string
     description: Create a test case and map it to given company, project, module and sub-module
     body:
+  
       application/json:
         type : CreateTestCaseBO
         example: {"testCase":{"testCaseName":"","testCaseDescriptipn":"","testSteps":["Do this","Do that"],"expectedResult":"","actualResult":"","testType":"","priority":"","automation":true,"comments":""},"testCaseMeta":{"companyId":"eae0cef8-caed-11e9-a32f-2a2ae2dbcce4","projectId":"eae0cef8-caed-11e9-a32f-2a2ae2dbcce4","moduleId":"eae0cef8-caed-11e9-a32f-2a2ae2dbcce4","submoduleId":"eae0cef8-caed-11e9-a32f-2a2ae2dbcce4"}}
