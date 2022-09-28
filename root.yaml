@@ -1,1 +1,6 @@
-"moduleId":"eae0cef8-caed-11e9-a32f-2a2ae2dbcce4"
+#%RAML 1.0
+title: Test Studio
+version: v1
+protocols: [HTTPS]
+baseUri: https://example.com/api/{version}
+mediaType: application/json
